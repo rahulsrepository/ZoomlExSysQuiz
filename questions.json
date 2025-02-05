@@ -1,0 +1,317 @@
+[
+  {
+    "id": 1,
+    "question": "What is 7 × 8?",
+    "A": "54",
+    "B": "56",
+    "C": "62",
+    "D": "48",
+    "answer": "B"
+  },
+  {
+    "id": 2,
+    "question": "What is the square root of 64?",
+    "A": "6",
+    "B": "7",
+    "C": "8",
+    "D": "9",
+    "answer": "C"
+  },
+  {
+    "id": 3,
+    "question": "What is 15% of 200?",
+    "A": "20",
+    "B": "25",
+    "C": "30",
+    "D": "35",
+    "answer": "C"
+  },
+  {
+    "id": 4,
+    "question": "What is the next number in the sequence: 2, 4, 8, 16, ...?",
+    "A": "24",
+    "B": "32",
+    "C": "64",
+    "D": "48",
+    "answer": "B"
+  },
+  {
+    "id": 5,
+    "question": "What is 3² + 4²?",
+    "A": "25",
+    "B": "36",
+    "C": "49",
+    "D": "16",
+    "answer": "A"
+  },
+  {
+    "id": 6,
+    "question": "What is the value of π rounded to two decimal places?",
+    "A": "3.12",
+    "B": "3.14",
+    "C": "3.16",
+    "D": "3.10",
+    "answer": "B"
+  },
+  {
+    "id": 7,
+    "question": "What is the area of a rectangle with length 6 and width 4?",
+    "A": "10",
+    "B": "12",
+    "C": "24",
+    "D": "36",
+    "answer": "C"
+  },
+  {
+    "id": 8,
+    "question": "What is 125 ÷ 5?",
+    "A": "20",
+    "B": "25",
+    "C": "30",
+    "D": "15",
+    "answer": "B"
+  },
+  {
+    "id": 9,
+    "question": "What is the perimeter of a square with side length 5?",
+    "A": "10",
+    "B": "15",
+    "C": "20",
+    "D": "25",
+    "answer": "C"
+  },
+  {
+    "id": 10,
+    "question": "What is the value of 3! (3 factorial)?",
+    "A": "3",
+    "B": "6",
+    "C": "9",
+    "D": "12",
+    "answer": "B"
+  },
+  {
+    "id": 11,
+    "question": "What is the median of the numbers: 3, 7, 1, 9, 5?",
+    "A": "1",
+    "B": "3",
+    "C": "5",
+    "D": "7",
+    "answer": "C"
+  },
+  {
+    "id": 12,
+    "question": "What is 2³?",
+    "A": "4",
+    "B": "6",
+    "C": "8",
+    "D": "16",
+    "answer": "C"
+  },
+  {
+    "id": 13,
+    "question": "What is the circumference of a circle with radius 3? (Use π = 3.14)",
+    "A": "9.42",
+    "B": "18.84",
+    "C": "6.28",
+    "D": "28.26",
+    "answer": "D"
+  },
+  {
+    "id": 14,
+    "question": "What is 50% of 80?",
+    "A": "30",
+    "B": "40",
+    "C": "50",
+    "D": "60",
+    "answer": "B"
+  },
+  {
+    "id": 15,
+    "question": "What is the next prime number after 17?",
+    "A": "19",
+    "B": "21",
+    "C": "22",
+    "D": "23",
+    "answer": "A"
+  },
+  {
+    "id": 16,
+    "question": "What is the volume of a cube with side length 4?",
+    "A": "16",
+    "B": "32",
+    "C": "64",
+    "D": "128",
+    "answer": "C"
+  },
+  {
+    "id": 17,
+    "question": "What is 5 × (3 + 2)?",
+    "A": "10",
+    "B": "15",
+    "C": "20",
+    "D": "25",
+    "answer": "D"
+  },
+  {
+    "id": 18,
+    "question": "What is the smallest three-digit prime number?",
+    "A": "101",
+    "B": "103",
+    "C": "107",
+    "D": "109",
+    "answer": "A"
+  },
+  {
+    "id": 19,
+    "question": "What is the sum of the first 5 positive integers?",
+    "A": "10",
+    "B": "15",
+    "C": "20",
+    "D": "25",
+    "answer": "B"
+  },
+  {
+    "id": 20,
+    "question": "What is the absolute value of -15?",
+    "A": "15",
+    "B": "-15",
+    "C": "0",
+    "D": "16",
+    "answer": "A"
+  },
+  {
+    "id": 21,
+    "question": "What is 9 × 12?",
+    "A": "98",
+    "B": "108",
+    "C": "118",
+    "D": "128",
+    "answer": "B"
+  },
+  {
+    "id": 22,
+    "question": "What is the next term in the sequence: 1, 3, 6, 10, ...?",
+    "A": "13",
+    "B": "14",
+    "C": "15",
+    "D": "16",
+    "answer": "C"
+  },
+  {
+    "id": 23,
+    "question": "What is the least common multiple of 4 and 6?",
+    "A": "12",
+    "B": "18",
+    "C": "24",
+    "D": "36",
+    "answer": "A"
+  },
+  {
+    "id": 24,
+    "question": "What is 7² - 5²?",
+    "A": "24",
+    "B": "26",
+    "C": "28",
+    "D": "30",
+    "answer": "A"
+  },
+  {
+    "id": 25,
+    "question": "What is 20% of 150?",
+    "A": "20",
+    "B": "25",
+    "C": "30",
+    "D": "35",
+    "answer": "C"
+  },
+  {
+    "id": 26,
+    "question": "What is the area of a triangle with base 6 and height 4?",
+    "A": "12",
+    "B": "18",
+    "C": "24",
+    "D": "30",
+    "answer": "A"
+  },
+  {
+    "id": 27,
+    "question": "What is 144 ÷ 12?",
+    "A": "10",
+    "B": "11",
+    "C": "12",
+    "D": "13",
+    "answer": "C"
+  },
+  {
+    "id": 28,
+    "question": "What is the next prime number after 29?",
+    "A": "31",
+    "B": "33",
+    "C": "35",
+    "D": "37",
+    "answer": "A"
+  },
+  {
+    "id": 29,
+    "question": "What is 4 × (2 + 3)?",
+    "A": "10",
+    "B": "20",
+    "C": "12",
+    "D": "24",
+    "answer": "B"
+  },
+  {
+    "id": 30,
+    "question": "What is the difference between 45 and 27?",
+    "A": "16",
+    "B": "18",
+    "C": "20",
+    "D": "22",
+    "answer": "B"
+  },
+  {
+    "id": 31,
+    "question": "What is the cube root of 27?",
+    "A": "3",
+    "B": "4",
+    "C": "5",
+    "D": "6",
+    "answer": "A"
+  },
+  {
+    "id": 32,
+    "question": "What is 5! (5 factorial)?",
+    "A": "100",
+    "B": "110",
+    "C": "120",
+    "D": "130",
+    "answer": "C"
+  },
+  {
+    "id": 33,
+    "question": "What is the area of a circle with radius 5? (Use π = 3.14)",
+    "A": "78.5",
+    "B": "79.5",
+    "C": "80.5",
+    "D": "81.5",
+    "answer": "A"
+  },
+  {
+    "id": 34,
+    "question": "What is 75% of 160?",
+    "A": "100",
+    "B": "110",
+    "C": "120",
+    "D": "130",
+    "answer": "C"
+  },
+  {
+    "id": 35,
+    "question": "What is 2⁴?",
+    "A": "8",
+    "B": "16",
+    "C": "32",
+    "D": "64",
+    "answer": "B"
+  }
+]

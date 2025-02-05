@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+    integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="script.js" defer></script>
+  <!-- Include SweetAlert2 CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+  <!-- Include SweetAlert2 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <title>ZoomlExSys</title>
+</head>
+
+<body>
+  <header id="header" class="header fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-4">
+      <div class="container">
+        <a class="navbar-brand" href="">
+          <h1 class="sitename">zoomlExSys</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a id="nav-about-id" class="nav-link" href="#"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+          </ul>
+          <div class="nav-item ms-3">
+            <button id="theme-toggle" class="btn btn-link nav-link">
+              <i class="bi bi-moon-fill" id="theme-icon"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main">
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+      <div class="container">
+        <div class="row min-vh-100 align-items-center">
+          <!-- Text Content Column -->
+          <div class="col-lg-6">
+            <div class="hero-content" data-aos="fade-up" data-aos-delay="100">
+              <h2 class="display-4 fw-bold mb-3">ZoomlExSys</h2>
+              <p class="fs-4 mb-4">
+                <span class="typed">Online Exam Platform</span>
+              </p>
+              <div class="d-flex justify-content-start gap-3">
+                <a class="btn toggle-section" id="sign-up" data-target="#signup">Sign Up</a>
+                <a class="btn toggle-section" id="sign-in" data-target="#signin">Login</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- signup section -->
+    <section id="signup" class="auth-section">
+      <div class="container">
+        <div class="row justify-content-between p-2 p-md-5 h-100">
+          <!-- Profile Image Section -->
+          <div id="prof-image" class="image col-md-5 d-none d-md-block">
+            <div class="h-100">
+              <img src="./images/Signup.svg" class="img-fluid h-100" alt="Signup Image" />
+            </div>
+          </div>
+
+          <!-- Form Section -->
+          <div class="image-bg col-sm-12 col-md-5 mt-5 ">
+            <h1 class="text-start fs-sm-4">Create An Account</h1>
+            <!-- Sign Up Form -->
+            <form id="signupForm" class="row g-3">
+              <div class="col-12">
+                <label for="signupFirstName" class="form-label">First Name</label>
+                <input type="text" class="form-control" id="signupFirstName" placeholder="First Name" />
+              </div>
+              <div class="col-12">
+                <label for="signupLastName" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="signupLastName" placeholder="Last Name" />
+              </div>
+              <div class="col-12">
+                <label for="signupEmail" class="form-label">Email</label>
+                <input type="email" class="form-control" id="signupEmail" placeholder="Email" autocomplete="username" />
+              </div>
+              <div class="col-12">
+                <label for="signupPassword" class="form-label">Password</label>
+                <input type="password" class="form-control" id="signupPassword" placeholder="Password"
+                  autocomplete="new-password" />
+              </div>
+              <div class="col-12">
+                <label for="signupConfirmPassword" class="form-label">Confirm Password</label>
+                <input type="password" class="form-control" id="signupConfirmPassword" placeholder="Confirm Password"
+                  autocomplete="current-password" />
+              </div>
+
+              <div class="col-12">
+                <button type="submit" class="btn">Sign Up</button>
+              </div>
+            </form>
+            <div>
+              <p class="py-4">
+                Already have an account? <a class="toggle-section" href="#" data-target="#signin"
+                  id="sign-in2">Login</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- signin section  -->
+    <section id="signin" class="auth-section">
+      <div class="container">
+        <div class="row justify-content-between p-3 h-100">
+          <!-- Profile Image Section -->
+          <div id="prof-image" class="image col-md-5 d-none d-md-block">
+            <div class="h-100">
+              <img src="./images/Login.svg" class="img-fluid h-100" alt="Signup Image" />
+            </div>
+          </div>
+
+          <!-- Form Section -->
+          <div class="image-bg col-sm-12 col-md-5 mt-5">
+            <h1 class="mb-3 text-center">Login</h1>
+            <!-- Sign In Form -->
+            <form id="signinForm" class="row g-3">
+              <div class="col-12">
+                <label for="signinEmail" class="form-label">Email</label>
+                <input type="email" class="form-control" id="signinEmail" placeholder="Email" autocomplete="username" />
+              </div>
+              <div class="col-12">
+                <label for="signinPassword" class="form-label">Password</label>
+                <input type="password" class="form-control" id="signinPassword" placeholder="Password"
+                  autocomplete="current-password" />
+              </div>
+              <div class="col-12">
+                <div class="remember-check">
+                  <input class="remember-check-input" type="checkbox" id="signinRememberMe" />
+                  <label class="form-check-label" for="signinRememberMe">Remember me</label>
+                </div>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary">Login</button>
+              </div>
+            </form>
+            <div>
+              <p class="py-3">
+                Don't have an account? <a id="sign-up2" class="toggle-section" href="#" data-target="#signup">Sign
+                  up</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- pass Result section  -->
+    <section id="pass-res" class="res">
+      <div class="container d-flex align-items-center justify-content-center">
+        <div class="row justify-content-center text-center p-2 w-100 mt-5">
+          <div id="prof-image" class="col-12 mt-5">
+            <h1 class="my-2">Result</h1>
+            <div class="d-flex justify-content-center">
+              <img src="./images/succes.svg" class="img-fluid" alt="Result Image" />
+            </div>
+          </div>
+
+          <div class="col-12">
+            <p class="fs-5">
+              Your Grade is <span id="succes-res-span" class="fw-bold"> User Grade %</span>
+            </p>
+            <p class="fs-5">
+              Congratulations <span id="succes-uname" class="fw-bold"> User Name </span>
+            </p>
+          </div>
+          <div class="col-12">
+            <button id="new-quiz-btn" type="button" class="btn btn-success rounded-3 shadow-sm px-4 py-2 fs-5 fw-bold"
+              data-target="#pass-res">New
+              Quiz</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- fail Result section  -->
+
+    <section id="fail-res" class="res">
+      <div class="container d-flex align-items-center justify-content-center">
+        <div class="row justify-content-center text-center p-2 w-100 mt-5">
+          <div id="prof-image" class="col-12 mb-4 mt-5">
+            <h1 class="my-2">Result</h1>
+            <div class="d-flex justify-content-center">
+              <img src="./images/fail.svg" class="img-fluid" alt="Result Image" />
+            </div>
+          </div>
+
+          <div class="col-12">
+            <p class="fs-5">Sorry <span id="fail-uname" class="fw-bold"> User Name </span></p>
+            <p class="fs-5">
+              Your Grade is <span id="fail-res-span" class="fw-bold"> User Grade %</span>
+            </p>
+            <p class="fs-5">
+              This isn't the end—it's a chance to grow! Keep going and aim
+              higher next time.
+            </p>
+            <p class="fs-5">
+              Remember to <span class="fw-bold">ZoomlExEys</span>: Zoom,
+              Focus, Explore, and Energize! 💪
+            </p>
+          </div>
+          <div class="col-12">
+            <button id="new-quiz-fail-btn" type="button"
+              class="btn btn-success rounded-3 shadow-sm px-4 py-2 fs-5 fw-bold" data-target="#fail-res">New
+              Quiz</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- timeOut section  -->
+    <section id="timeout" class="res">
+      <div class="container d-flex align-items-center justify-content-center">
+        <div class="row justify-content-center text-center p-2 w-100 mt-5">
+          <div id="prof-image" class="col-12 mb-4 mt-5">
+            <h1 class="my-2">Timeout <i class="fa-regular fa-clock"></i></h1>
+            <div class="d-flex justify-content-center">
+              <img src="./images/timeout.png" class="img-fluid" alt="Result Image" />
+            </div>
+          </div>
+
+          <div class="col-12">
+            <p class="fs-5">
+              Your Grade is <span id="timeout-span" class="fw-bold"> User Grade %</span>
+            </p>
+          </div>
+          <div class="col-12">
+            <button id="new-quiz-timer-btn" type="button"
+              class="btn btn-success rounded-3 shadow-sm px-4 py-2 fs-5 fw-bold" data-target="#timeout">New
+              Quiz</button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Start exam -->
+    <section id="start-ex" class="res start-ex">
+      <div class="container d-flex align-items-center justify-content-center">
+        <div class="row justify-content-center text-center p-5 w-100 mt-5">
+          <div id="prof-image" class="col-12 mb-4 mt-5">
+            <div class="d-flex justify-content-center">
+              <img src="./images/startex.svg" class="img-fluid" alt="Result Image" />
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="d-flex justify-content-center">
+              <a id="startEx" href="#" class="btn">Start Exam</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quiz Section -->
+    </section>
+    <section id="quiz-section" class="quiz-section py-5 mt-5">
+      <div class="container mt-5">
+        <h2 class="text-center mb-4">General Knowledge Quiz</h2>
+        <div class="row">
+          <div class="col-md-4 col-sm-12 d-flex flex-column gap-3">
+            <div id="timer" class="quiz-timer text-center fs-1">05:00</div>
+            <!-- Flagged Questions Section -->
+            <div class="flagged-questions ">
+              <h5 class="fs-4 fs-sm-5">Flagged Questions</h5>
+              <ul id="flagged-list">
+
+              </ul>
+            </div>
+
+          </div>
+          <div class="col-md-8 col-sm-12 col-sm-12">
+            <div class="quiz-card p-4 d-flex d-sm-flex justify-content-between">
+              <div>
+                <h5 class="fs-4 fs-sm-5">1. What is the most abundant gas in the Earth's atmosphere?</h5>
+              </div>
+              <button id="flag" class="btn flag-btn p-0 ms-1" title="Flag this question">
+                <i class="bi bi-flag"></i>
+              </button>
+            </div>
+            <div class="form mt-3">
+              <form class="">
+                <label class="form-check">
+                  <input class="form-check-input" type="radio" name="answer" id="optionA">
+                  <span class="form-check-label">Nitrogen</span>
+                </label>
+
+                <label class="form-check">
+                  <input class="form-check-input" type="radio" name="answer" id="optionB">
+                  <span class="form-check-label">Helium</span>
+                </label>
+
+                <label class="form-check">
+                  <input class="form-check-input" type="radio" name="answer" id="optionC">
+                  <span class="form-check-label">Oxygen</span>
+                </label>
+
+                <label class="form-check">
+                  <input class="form-check-input" type="radio" name="answer" id="optionD">
+                  <span class="form-check-label">Carbon Dioxide</span>
+                </label>
+              </form>
+            </div>
+
+            <div class="container d-flex justify-content-center align-items-center gap-3 mt-4">
+              <div class="col-6 d-flex justify-content-first align-items-center gap-2">
+                <!-- Previous Button -->
+                <button id="previous-btn" type="button" class="btn quiz-nav" title="Go to Previous">
+                  <i class="bi bi-arrow-left"></i>
+                </button>
+                <!-- Next Button -->
+                <button id="next-btn" type="button" class="btn quiz-nav" title="Go to Next">
+                  <i class="bi bi-arrow-right"></i>
+                </button>
+              </div>
+              <!-- Submit Button -->
+              <div class="col-6 d-flex justify-content-end">
+                <button id="submit-btn" type="submit" class="btn-submit ms-auto" title="Submit Exam">
+                  Submit
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+
+  </main>
+
+  <footer id="footer" class="footer light-background py-5" style="display: block;">
+    <div class="container">
+      <h4 class="sitename">ZoomlExSys</h4>
+      Zoom in on your goals, Explore new possibilities, and Energize your journey!
+      </p>
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://www.linkedin.com/in/omar-araby" target="_blank"><i class="bi bi-linkedin"></i></a>
+        <a href="#"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://www.facebook.com/alking.abo" target="_blank"><i class="bi bi-facebook"></i></a>
+      </div>
+      <div class="container">
+        <div class="copyright">
+          <span>Copyright</span>
+          <strong class="px-1 sitename">ZoomlExSys</strong>
+          <span>All Rights Reserved</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"
+    integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="theme.js"></script>
+  <script src="script.js"></script>
+</body>
